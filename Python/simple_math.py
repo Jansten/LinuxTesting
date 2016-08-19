@@ -1,5 +1,5 @@
 #simple_math.py v2
-#2016, Michael Hannon
+#2016-08-18, Michael Hannon
 #Performs some simple math on a base number, with clear text output
 #v2 added user input to determine what numbers are used in various math forumlas (formulae?)
 
