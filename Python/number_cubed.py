@@ -15,4 +15,4 @@ def by_three(number):
         print ("Error: Value entered is not divisible by three.  Please try again.")
         return False
         
-by_three(4)
+by_three(3)
