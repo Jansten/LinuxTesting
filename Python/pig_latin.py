@@ -3,6 +3,8 @@
 # Takes a user entered word and "translates" it to Pig Latin
 # Based on code written for a CodeCademy course
 
+#TODO: Update code for Python 3.
+
 # Set a varliable for the "ay" portion of Pig Latin
 pyg = "ay"
 

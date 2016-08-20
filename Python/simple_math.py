@@ -3,6 +3,8 @@
 #Performs some simple math on a base number, with clear text output
 #v2 added user input to determine what numbers are used in various math forumlas (formulae?)
 
+#TODO: Update code for Python 3.
+
 #Prompt the user to enter a whole number (no decimals)
 base_num = int(raw_input("Please enter a whole number: "))
 
