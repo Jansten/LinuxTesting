@@ -12,7 +12,7 @@ def by_three(number):
     if number % 3 == 0:
         return cube(number)
     else:
-        print "Error: Value entered is not divisible by three.  Please try again."
+        print ("Error: Value entered is not divisible by three.  Please try again.")
         return False
         
 by_three(4)
