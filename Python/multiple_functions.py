@@ -35,6 +35,5 @@ def trip_cost(city,days,spending_money):
 input_city = raw_input("Please enter the city: ")
 input_days = int(raw_input("Please enter the number of days: "))
 input_spending_money = int(raw_input("Please enter the amount of spending money: "))
-print "The Total trip cost (in dollars) is: "
-#print trip_cost("Los Angeles",5,600)
+print "You're flying to %s for %d days and bringing %d spending money for a total of: " % (input_city,input_days,input_spending_money)
 print trip_cost(input_city,input_days,input_spending_money)
