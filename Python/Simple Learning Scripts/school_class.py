@@ -1,3 +1,5 @@
+# Saving my answer for a Python class at CodeCademy.
+
 lloyd = {
     "name": "Lloyd",
     "homework": [90.0, 97.0, 75.0, 92.0],
@@ -17,11 +19,13 @@ tyler = {
     "tests": [100.0, 100.0]
 }
 
+students = [lloyd, alice, tyler]
+
 # Add your function below!
 def average(numbers):
     total = sum(numbers)
     total = float(total)
-    total = total / len(numbers)
+    total = float(total) / len(numbers)
     return total
     
 def get_average(student):
@@ -49,5 +53,7 @@ def get_class_average(students):
         results.append(get_average(student))
     return average(results)
 
-print get_average(lloyd)
-print get_letter_grade(get_average(lloyd))
+# print get_average(lloyd)
+# print get_letter_grade(get_average(lloyd))
+print get_class_average(students)
+print get_letter_grade(get_class_average(students))
