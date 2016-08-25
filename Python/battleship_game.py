@@ -1,5 +1,12 @@
+# battleship_game.py
+# 2016-08-24, Michael Hannon
+# A functioning Battleship game, with proper error handling.
+# Unlike the traditional game, user only gets four tries before the game exits.
+
+# Import modules
 from random import randint
 
+# Initialize board and fill the spaces in appropriately
 board = []
 
 for x in range(5):
@@ -9,9 +16,11 @@ def print_board(board):
     for row in board:
         print " ".join(row)
 
+# Start the game by printing out the board and welcoming the user
 print "Let's play Battleship!"
 print_board(board)
 
+# Place the battleship on a random space within the board's limits
 def random_row(board):
     return randint(0, len(board) - 1)
 
@@ -20,11 +29,11 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
-print ship_row
-print ship_col
+# print ship_row -- Debugging only!  This will print out the ship's location on the board.
+# print ship_col -- Debugging only!  This will print out the ship's location on the board.
 
-# Everything from here on should go in your for loop!
-# Be sure to indent four spaces!
+# The main game.  Have the user input the row and column, then check whether it's the battleship or not.
+# If the user sinks the battleship, exit the game.  If not, allow four guesses.
 for turn in range(4):
     guess_row = int(raw_input("Guess Row:"))
     guess_col = int(raw_input("Guess Col:"))
@@ -40,7 +49,6 @@ for turn in range(4):
         else:
             print "You missed my battleship!"
             board[guess_row][guess_col] = "X"
-    # Print (turn + 1) here!
         if turn == 3:
             print "Game Over"
         else:
