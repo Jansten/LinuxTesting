@@ -16,7 +16,10 @@ def random_col(board):
     return randint(0, len(board[0]) - 1)
 
 ship_row = random_row(board)
+print ship_row
+
 ship_col = random_col(board)
+print ship_col
 
 # Add your code below!
 guess_row = int(raw_input("Guess Row: "))
