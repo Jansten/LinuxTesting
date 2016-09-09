@@ -12,7 +12,7 @@ def censor(text,word):
             result += " " + ("*" * len(word))
         else:
             result += " " + i
-    clean_string = result[1:]
+    clean_string = result[1:] #This chops off the leading space in the string.
     return clean_string
     
 censor("this hack is wach hack", "hack")
