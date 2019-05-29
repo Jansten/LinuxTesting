@@ -1,1 +1,1 @@
-I'm learning Javascript!  Most of these files will be written based on CodeCademy courses.
+I'm learning Javascript!
